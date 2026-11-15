@@ -73,6 +73,8 @@ import {
 } from './components/EventModal';
 import { SideNavDrawer } from './components/SideNavDrawer';
 import { AllMeetsView } from './components/AllMeetsView';
+import Dashboard from './pages/Dashboard';
+import { users, meetings as initialDashboardMeetings } from './data/dashboardData';
 
 function BackgroundDecor({ theme }: { theme: ThemeMode }) {
   const isDark = theme === 'dark';
@@ -212,6 +214,19 @@ export function App() {
 
   // Demo RBAC user state (UI preview only; backend enforces production authorization)
   const [currentUser, setCurrentUser] = useState<CurrentUser>(DEMO_USERS.ob);
+  const [dashboardMeetings, setDashboardMeetings] = useState(initialDashboardMeetings);
+
+  const dashboardRole =
+    currentUser === DEMO_USERS.ob ? 'Office Bearer' :
+    currentUser === DEMO_USERS.faculty ? 'Faculty' :
+    currentUser === DEMO_USERS.executive ? 'Executive' :
+    currentUser === DEMO_USERS.team_lead ? 'Team Lead' :
+    'Member';
+
+  const dashboardUser = {
+    ...users[dashboardRole],
+    name: currentUser.name,
+  };
 
   const [events, setEvents] = useState<CalendarEvent[]>(INITIAL_EVENTS);
   const [ghostRanges, setGhostRanges] = useState<GhostRange[]>(INITIAL_GHOST_RANGES);
@@ -1284,6 +1299,15 @@ export function App() {
               onUpdateEventMom={handleUpdateEventMom}
               onOpenCreateModal={openFreshAdminModal}
             />
+          ) : activeNav === 'dashboard' ? (
+            <Dashboard
+              user={dashboardUser}
+              role={dashboardRole}
+              meetings={dashboardMeetings}
+              setMeetings={setDashboardMeetings}
+              theme={theme}
+              onNavigateCalendar={() => setActiveNav('calendar')}
+            />
           ) : (
             <main
               className="flex-1 rounded-[20px] border p-8 flex flex-col items-center justify-center text-center"
@@ -1297,15 +1321,13 @@ export function App() {
                 className="text-[20px] font-bold tracking-tight"
                 style={{ color: palette.textPrimary }}
               >
-                TechSpace {activeNav === 'dashboard' ? 'Dashboard' : 'Hierarchy'}
+                TechSpace Hierarchy
               </h1>
               <p
                 className="text-[13.5px] mt-2 max-w-[420px]"
                 style={{ color: palette.textMuted }}
               >
-                {activeNav === 'dashboard'
-                  ? 'The Dashboard overview connects directly to TechSpace club workspaces. Return to Calendar to view and filter club schedules.'
-                  : 'Club reporting lines for Core Team, Web Dev, Design, and Operations are managed here. Return to Calendar to inspect scheduled sessions.'}
+                Club reporting lines for Core Team, Web Dev, Design, and Operations are managed here. Return to Calendar to inspect scheduled sessions.
               </p>
               <button
                 type="button"

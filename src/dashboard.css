@@ -1,0 +1,2373 @@
+/* Dashboard-only styles. Scoped to .dashboard-page to protect the merged calendar UI. */
+.dashboard-page .stats-section {
+  margin-top: 31px;
+}
+
+.dashboard-page .section-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.dashboard-page .section-title-row h2,
+.dashboard-page .panel-heading h2 {
+  font:
+    700 19px "Space Grotesk",
+    sans-serif;
+  letter-spacing: -0.45px;
+  margin: 5px 0 0;
+  color: #1b304d;
+}
+
+.dashboard-page .live-label {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #8291a3;
+}
+
+.dashboard-page .stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 13px;
+}
+
+.dashboard-page .stat-card {
+  background: #fff;
+  border: 1px solid #e9edf3;
+  border-radius: 11px;
+  padding: 15px 16px;
+  min-height: 130px;
+  position: relative;
+}
+
+.dashboard-page .stat-icon {
+  width: 35px;
+  height: 35px;
+  border-radius: 9px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 11px;
+}
+
+.dashboard-page .stat-icon.blue {
+  background: #eaf2fc;
+  color: #3977b5;
+}
+
+.dashboard-page .stat-icon.teal {
+  background: #e6f5f2;
+  color: #23917f;
+}
+
+.dashboard-page .stat-icon.purple {
+  background: #f1edfb;
+  color: #8060bd;
+}
+
+.dashboard-page .stat-icon.orange {
+  background: #fff1e8;
+  color: #d8874e;
+}
+
+.dashboard-page .stat-topline {
+  position: absolute;
+  left: 61px;
+  right: 13px;
+  top: 23px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #748398;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.dashboard-page .stat-topline svg {
+  color: #aab5c2;
+}
+
+.dashboard-page .stat-value {
+  display: block;
+  font:
+    700 25px "Space Grotesk",
+    sans-serif;
+  color: #1d3554;
+  line-height: 1.1;
+}
+
+.dashboard-page .stat-card small {
+  display: block;
+  color: #9aa5b3;
+  font-size: 9px;
+  margin-top: 5px;
+}
+
+/* MEETINGS AND LEADERSHIP */
+
+.dashboard-page .content-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.dashboard-page .panel {
+  background: #fff;
+  border: 1px solid #e8edf3;
+  border-radius: 11px;
+  padding: 20px 20px 12px;
+  min-width: 0;
+}
+
+.dashboard-page .panel-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.dashboard-page .panel-heading h2 {
+  font-size: 17px;
+}
+
+.dashboard-page .subtle-link {
+  border: 0;
+  background: transparent;
+  color: #3976ae;
+  font-size: 10px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  white-space: nowrap;
+}
+
+.dashboard-page .meeting-row {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 13px 0;
+  border-top: 1px solid #eff2f6;
+}
+
+.dashboard-page .meeting-date {
+  width: 46px;
+  height: 49px;
+  border-radius: 8px;
+  background: #edf3fa;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  flex-shrink: 0;
+  color: #285985;
+}
+
+.dashboard-page .meeting-date strong {
+  font:
+    700 20px "Space Grotesk",
+    sans-serif;
+  line-height: 1;
+}
+
+.dashboard-page .meeting-date span {
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-top: 4px;
+}
+
+.dashboard-page .meeting-main {
+  flex: 1;
+  min-width: 0;
+}
+
+.dashboard-page .meeting-main h3 {
+  font:
+    700 12px "Space Grotesk",
+    sans-serif;
+  color: #273e5b;
+  margin: 0 0 5px;
+}
+
+.dashboard-page .team-pill {
+  font-size: 8px;
+  font-weight: 700;
+  padding: 3px 7px;
+  border-radius: 4px;
+}
+
+.dashboard-page .team-pill.teal {
+  background: #e6f5f2;
+  color: #218b7b;
+}
+
+.dashboard-page .team-pill.blue {
+  background: #eaf2fc;
+  color: #3977b5;
+}
+
+.dashboard-page .team-pill.purple {
+  background: #f1edfb;
+  color: #8060bd;
+}
+
+.dashboard-page .meeting-meta {
+  display: flex;
+  gap: 13px;
+  margin-top: 8px;
+  color: #8c99a9;
+  font-size: 9px;
+}
+
+.dashboard-page .meeting-meta span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.dashboard-page .meeting-open {
+  border: 1px solid #e8edf3;
+  background: #fff;
+  color: #7f8da0;
+  border-radius: 50%;
+  width: 31px;
+  height: 31px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+
+.dashboard-page .leader-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 0;
+  border-top: 1px solid #eff2f6;
+}
+
+.dashboard-page .leader-avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 9px;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+
+.dashboard-page .leader-avatar.blue {
+  background: #eaf2fc;
+  color: #3977b5;
+}
+
+.dashboard-page .leader-avatar.teal {
+  background: #e6f5f2;
+  color: #218b7b;
+}
+
+.dashboard-page .leader-avatar.purple {
+  background: #f1edfb;
+  color: #8060bd;
+}
+
+.dashboard-page .leader-avatar.orange {
+  background: #fff1e8;
+  color: #d8874e;
+}
+
+.dashboard-page .leader-details {
+  display: grid;
+  gap: 3px;
+  flex: 1;
+}
+
+.dashboard-page .leader-details strong {
+  font-size: 10px;
+  color: #2b405d;
+}
+
+.dashboard-page .leader-details span {
+  font-size: 9px;
+  color: #8c99a9;
+}
+
+.dashboard-page .leader-group {
+  font-size: 8px;
+  color: #7c8da1;
+  background: #f4f6f9;
+  border-radius: 5px;
+  padding: 5px 7px;
+  white-space: nowrap;
+}
+
+/* TEAM FOCUS */
+
+.dashboard-page .team-focus-intro {
+  font-size: 10px;
+  line-height: 1.6;
+  color: #8491a2;
+  margin: 0 0 12px;
+}
+
+.dashboard-page .focus-team {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  border-top: 1px solid #eff2f6;
+}
+
+.dashboard-page .focus-team .stat-icon {
+  width: 32px;
+  height: 32px;
+  margin: 0;
+}
+
+.dashboard-page .focus-team > div:last-child {
+  display: grid;
+  gap: 3px;
+}
+
+.dashboard-page .focus-team strong {
+  font-size: 10px;
+  color: #2b405d;
+}
+
+.dashboard-page .focus-team span {
+  font-size: 8px;
+  color: #8c99a9;
+  letter-spacing: 0.8px;
+}
+
+/* TEAMS */
+
+.dashboard-page .teams-section {
+  margin-top: 25px;
+}
+
+.dashboard-page .section-caption {
+  font-size: 10px;
+  color: #929eac;
+}
+
+.dashboard-page .mini-team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 13px;
+}
+
+.dashboard-page .mini-team-card {
+  background: #fff;
+  border: 1px solid #e8edf3;
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.dashboard-page .mini-team-card .stat-icon {
+  width: 33px;
+  height: 33px;
+  margin-bottom: 12px;
+}
+
+.dashboard-page .mini-team-card .eyebrow {
+  font-size: 8px;
+  color: #9aa6b5;
+}
+
+.dashboard-page .mini-team-card h3 {
+  font:
+    700 14px "Space Grotesk",
+    sans-serif;
+  margin: 6px 0;
+  color: #263d5b;
+}
+
+.dashboard-page .mini-team-card p {
+  font-size: 10px;
+  line-height: 1.6;
+  color: #8491a2;
+  margin: 0;
+}
+
+/* FOOTER */
+
+.dashboard-page .role-summary {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  background: #fff;
+  border: 1px solid #e8edf3;
+  border-radius: 11px;
+  padding: 21px;
+  margin-top: 28px;
+}
+
+.dashboard-page .role-summary-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  background: #edf4fc;
+  color: #3977b5;
+  flex-shrink: 0;
+}
+
+.dashboard-page .role-summary h2 {
+  font:
+    700 17px "Space Grotesk",
+    sans-serif;
+  margin: 5px 0;
+  color: #1b304d;
+}
+
+.dashboard-page .role-summary p,
+.dashboard-page .faculty-panel p {
+  font-size: 11px;
+  color: #8491a2;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.dashboard-page .team-overview,
+.dashboard-page .faculty-panel {
+  margin-top: 18px;
+}
+
+.dashboard-page .my-team-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 0;
+  border-top: 1px solid #eff2f6;
+}
+
+.dashboard-page .my-team-row .stat-icon {
+  margin: 0;
+}
+
+.dashboard-page .my-team-row > div:nth-child(2) {
+  display: grid;
+  gap: 4px;
+  flex: 1;
+}
+
+.dashboard-page .my-team-row strong {
+  font-size: 12px;
+  color: #2b405d;
+}
+
+.dashboard-page .my-team-row span:not(.team-pill) {
+  font-size: 10px;
+  color: #8c99a9;
+}
+
+/* CREATE MEETING BUTTON */
+
+.dashboard-page .modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background: #10243b80;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+  overflow-y: auto;
+}
+
+.dashboard-page .meeting-modal {
+  width: 100%;
+  max-width: 530px;
+  max-height: 92vh;
+  overflow-y: auto;
+  background: #fff;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 20px 65px #0c203c35;
+  animation: techspaceDashboardModalEnter 0.2s ease-out;
+}
+
+@keyframes techspaceDashboardModalEnter {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dashboard-page .modal-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 21px;
+}
+
+.dashboard-page .modal-heading h2 {
+  font:
+    700 23px "Space Grotesk",
+    sans-serif;
+  color: #1b304d;
+  margin: 6px 0;
+}
+
+.dashboard-page .modal-heading p {
+  color: #8794a5;
+  font-size: 11px;
+  margin: 0;
+}
+
+.dashboard-page .modal-close {
+  width: 34px;
+  height: 34px;
+  border: 1px solid #e8edf3;
+  border-radius: 8px;
+  color: #748398;
+  background: #fff;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+
+.dashboard-page .meeting-modal form {
+  display: grid;
+  gap: 14px;
+}
+
+.dashboard-page .meeting-modal label {
+  display: grid;
+  gap: 7px;
+  color: #435771;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.dashboard-page .meeting-modal label > span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.dashboard-page .meeting-modal input,
+.dashboard-page .meeting-modal select,
+.dashboard-page .meeting-modal textarea {
+  width: 100%;
+  min-width: 0;
+  border: 1px solid #e4eaf1;
+  border-radius: 8px;
+  padding: 11px 12px;
+  color: #263d5b;
+  background: #fbfcfe;
+  font-family: "DM Sans", sans-serif;
+  font-size: 11px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.dashboard-page .meeting-modal input:focus,
+.dashboard-page .meeting-modal select:focus,
+.dashboard-page .meeting-modal textarea:focus {
+  border-color: #5d8fbe;
+  box-shadow: 0 0 0 3px #3977b515;
+  background: #fff;
+}
+
+.dashboard-page .meeting-modal textarea {
+  resize: vertical;
+}
+
+.dashboard-page .modal-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.dashboard-page .form-error {
+  background: #fff0ef;
+  color: #c34e46;
+  border-radius: 7px;
+  padding: 10px;
+  font-size: 10px;
+  margin: 0;
+}
+
+.dashboard-page .modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 9px;
+  border-top: 1px solid #edf0f4;
+  padding-top: 16px;
+  margin-top: 3px;
+}
+
+.dashboard-page .modal-actions button {
+  border-radius: 7px;
+  padding: 11px 17px;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.dashboard-page .cancel-btn {
+  border: 1px solid #e4eaf1;
+  background: #fff;
+  color: #6f7e91;
+}
+
+.dashboard-page .create-btn {
+  border: 0;
+  background: #1d527f;
+  color: #fff;
+}
+
+.dashboard-page .create-btn:hover {
+  background: #143b60;
+}
+
+/* RESPONSIVE MODAL */
+
+.dashboard-page .dashboard-minimal {
+  padding-top: 25px;
+  padding-bottom: 30px;
+}
+
+/* PAGE HEADING */
+
+.dashboard-page .minimal-welcome {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.dashboard-page .minimal-kicker {
+  display: block;
+  color: #e64b4b;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.1px;
+  margin-bottom: 7px;
+}
+
+.dashboard-page .minimal-welcome h1 {
+  margin: 0;
+  color: #292725;
+  font-size: 27px;
+  font-weight: 650;
+  letter-spacing: -0.8px;
+}
+
+.dashboard-page .minimal-welcome p {
+  margin: 6px 0 0;
+  color: #817a73;
+  font-size: 12px;
+}
+
+.dashboard-page .minimal-create-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  background: #f04444;
+  color: white;
+  border: 1px solid #f04444;
+  border-radius: 7px;
+  padding: 10px 14px;
+  font-size: 11px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.dashboard-page .minimal-create-btn:hover {
+  background: #d93636;
+}
+
+/* SECTION HEADINGS */
+
+.dashboard-page .minimal-section-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.dashboard-page .minimal-section-heading h2 {
+  margin: 0;
+  color: #292725;
+  font-size: 17px;
+  font-weight: 650;
+  letter-spacing: -0.3px;
+}
+
+.dashboard-page .minimal-data-label {
+  color: #8c857e;
+  font-size: 8px;
+  letter-spacing: 0.8px;
+}
+
+/* STATS */
+
+.dashboard-page .minimal-stats {
+  margin-bottom: 22px;
+}
+
+.dashboard-page .minimal-stats .stats-grid {
+  gap: 12px;
+}
+
+.dashboard-page .minimal-stats .stat-card {
+  min-height: 105px;
+  padding: 13px 14px;
+  border: 1px solid #eae2d9;
+  border-radius: 9px;
+  box-shadow: none;
+}
+
+.dashboard-page .minimal-stats .stat-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 7px;
+  margin-bottom: 8px;
+}
+
+.dashboard-page .minimal-stats .stat-value {
+  font-size: 23px;
+  color: #292725;
+}
+
+/* MAIN CONTENT */
+
+.dashboard-page .minimal-content-grid {
+  grid-template-columns: minmax(0, 1.15fr) minmax(300px, 0.85fr);
+  gap: 14px;
+  margin-top: 0;
+}
+
+.dashboard-page .minimal-content-grid .panel,
+.dashboard-page .minimal-team-panel {
+  background: #fff;
+  border: 1px solid #eae2d9;
+  border-radius: 9px;
+  box-shadow: none;
+  padding: 16px;
+}
+
+.dashboard-page .minimal-content-grid .panel-heading {
+  margin-bottom: 10px;
+}
+
+.dashboard-page .minimal-content-grid .panel-heading h2 {
+  font-size: 17px;
+}
+
+/* MEETING LIST */
+
+.dashboard-page .minimal-content-grid .meeting-row {
+  padding: 10px 0;
+  border-color: #eee8e1;
+}
+
+.dashboard-page .minimal-content-grid .meeting-date {
+  width: 40px;
+  height: 43px;
+  background: #fff0ed;
+  color: #e64b4b;
+  border-radius: 6px;
+}
+
+.dashboard-page .minimal-content-grid .meeting-date strong {
+  font-size: 18px;
+}
+
+.dashboard-page .minimal-content-grid .meeting-main h3 {
+  color: #292725;
+  font-size: 11px;
+  font-weight: 650;
+}
+
+.dashboard-page .minimal-content-grid .meeting-meta {
+  color: #817a73;
+}
+
+.dashboard-page .minimal-content-grid .meeting-open {
+  border-color: #eae2d9;
+  color: #817a73;
+}
+
+/* LEADERSHIP */
+
+.dashboard-page .minimal-content-grid .leader-row {
+  padding: 9px 0;
+  border-color: #eee8e1;
+}
+
+.dashboard-page .minimal-content-grid .leader-details strong {
+  color: #292725;
+}
+
+.dashboard-page .minimal-content-grid .leader-details span {
+  color: #817a73;
+}
+
+.dashboard-page .minimal-content-grid .leader-group {
+  background: #f5f1ec;
+  color: #716960;
+}
+
+/* TEAM PANELS */
+
+.dashboard-page .minimal-team-panel {
+  margin-bottom: 20px;
+}
+
+.dashboard-page .minimal-team-panel .my-team-row {
+  border-color: #eee8e1;
+}
+
+.dashboard-page .minimal-team-panel .my-team-row strong {
+  color: #292725;
+}
+
+.dashboard-page .minimal-team-panel .my-team-row span:not(.team-pill) {
+  color: #817a73;
+}
+
+/* TEAMS */
+
+.dashboard-page .minimal-teams {
+  margin-top: 22px;
+}
+
+.dashboard-page .minimal-teams .mini-team-grid {
+  gap: 12px;
+}
+
+.dashboard-page .minimal-teams .mini-team-card {
+  background: #fff;
+  border: 1px solid #eae2d9;
+  border-radius: 9px;
+  box-shadow: none;
+  padding: 14px;
+}
+
+.dashboard-page .minimal-teams .mini-team-card h3 {
+  color: #292725;
+  font-size: 13px;
+}
+
+.dashboard-page .minimal-teams .mini-team-card p {
+  color: #817a73;
+  font-size: 10px;
+}
+
+/* ROLE SUMMARY */
+
+.dashboard-page .minimal-role-summary {
+  margin: 0 0 20px;
+  padding: 15px;
+  border-color: #eae2d9;
+  border-radius: 9px;
+  box-shadow: none;
+  background: #fff;
+}
+
+.dashboard-page .minimal-role-summary h2 {
+  color: #292725;
+  font-size: 16px;
+}
+
+.dashboard-page .minimal-role-summary p {
+  color: #817a73;
+}
+
+/* THEME TOGGLE */
+
+.dashboard-page .theme-navbar-button {
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #eae2d9;
+  border-radius: 8px;
+  background: #fff;
+  color: #292725;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* DARK MODE */
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .dashboard-page .minimal-content-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .dashboard-page .minimal-welcome {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .dashboard-page .minimal-create-btn {
+    width: 100%;
+  }
+
+  .dashboard-page .minimal-stats .stats-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .dashboard-page .minimal-teams .mini-team-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* TEAM ACTIVITY CARD */
+
+.dashboard-page .team-activity-count {
+  display: flex;
+  align-items: baseline;
+  gap: 9px;
+  padding: 12px 0;
+}
+
+.dashboard-page .team-activity-count strong {
+  font-size: 30px;
+  font-weight: 650;
+  color: var(--text-primary, #292725);
+}
+
+.dashboard-page .team-activity-count span {
+  font-size: 11px;
+  color: #91877e;
+}
+
+/* Dashboard refresh: compact cards and independently scrollable panels */
+.dashboard-page .minimal-welcome {
+  margin: 0 0 18px;
+}
+.dashboard-page .minimal-welcome h1 {
+  margin-bottom: 4px;
+}
+.dashboard-page .dashboard-primary-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 14px;
+  align-items: stretch;
+}
+.dashboard-page .mini-calendar-panel,
+.dashboard-page .dashboard-scroll-panel {
+  min-width: 0;
+}
+.dashboard-page .mini-calendar-month {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 8px 0 12px;
+  color: #292725;
+  font-size: 12px;
+}
+.dashboard-page .mini-calendar-month button {
+  border: 0;
+  background: transparent;
+  color: #817a73;
+  padding: 4px;
+  cursor: pointer;
+}
+.dashboard-page .mini-calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 5px;
+  text-align: center;
+}
+.dashboard-page .mini-calendar-grid span {
+  min-height: 27px;
+  display: grid;
+  place-items: center;
+  border-radius: 7px;
+  font-size: 11px;
+}
+.dashboard-page .mini-calendar-grid .weekday {
+  color: #9a9188;
+  font-weight: 700;
+}
+.dashboard-page .mini-calendar-grid .calendar-day {
+  color: #49433e;
+}
+.dashboard-page .mini-calendar-grid .calendar-day.today {
+  background: #eaf2fc;
+  color: #286eb4;
+  font-weight: 800;
+}
+.dashboard-page .mini-calendar-grid .calendar-day.has-meeting {
+  box-shadow: inset 0 -2px 0 #ed6868;
+}
+.dashboard-page .compact-create-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 7px 9px;
+  border: 1px solid #e9dfd5;
+  border-radius: 7px;
+  background: #fff;
+  color: #3977b5;
+  font-size: 10px;
+  font-weight: 700;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.dashboard-page .dashboard-scroll-content {
+  max-height: 270px;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+.dashboard-page .dashboard-meeting-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 11px 0;
+  border-top: 1px solid #eee6de;
+  min-width: 0;
+}
+.dashboard-page .dashboard-meeting-row:first-child {
+  border-top: 0;
+}
+.dashboard-page .dashboard-meeting-row .meeting-date {
+  flex: 0 0 42px;
+}
+.dashboard-page .dashboard-meeting-row .meeting-main {
+  flex: 1;
+  min-width: 0;
+}
+.dashboard-page .dashboard-meeting-row .meeting-main h3 {
+  margin: 0 0 5px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #292725;
+}
+.dashboard-page .dashboard-meeting-row .meeting-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 6px;
+  color: #91877e;
+  font-size: 9px;
+}
+.dashboard-page .dashboard-meeting-row .meeting-meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.dashboard-page .meeting-actions {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.dashboard-page .icon-action,
+.dashboard-page .mom-upload-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border: 1px solid #e9dfd5;
+  border-radius: 50%;
+  color: #68819c;
+  background: #fff;
+  cursor: pointer;
+}
+.dashboard-page .mom-upload-button input {
+  display: none;
+}
+.dashboard-page .mom-panel,
+.dashboard-page .society-groups,
+.dashboard-page .past-meetings-panel,
+.dashboard-page .announcement-panel {
+  margin-top: 16px;
+}
+.dashboard-page .mom-list {
+  max-height: 230px;
+  overflow-y: auto;
+}
+.dashboard-page .society-groups-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+.dashboard-page .society-group-card {
+  border: 1px solid #e9dfd5;
+  border-radius: 9px;
+  padding: 13px;
+  background: #fff;
+}
+.dashboard-page .society-group-card h3 {
+  margin: 0 0 9px;
+  font-size: 12px;
+  color: #292725;
+}
+.dashboard-page .society-group-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.dashboard-page .society-group-tags span {
+  padding: 5px 8px;
+  border-radius: 6px;
+  background: #f7f3ef;
+  color: #746b63;
+  font-size: 9px;
+}
+.dashboard-page .past-meetings-scroll {
+  max-height: 250px;
+  overflow-y: auto;
+  padding-right: 5px;
+}
+.dashboard-page .past-meeting-count {
+  color: #91877e;
+  font-size: 10px;
+}
+.dashboard-page .dashboard-empty {
+  margin: 10px 0;
+  color: #91877e;
+  font-size: 11px;
+}
+.dashboard-page.dashboard-dark .mini-calendar-month,
+.dashboard-page.dashboard-dark .mini-calendar-grid .calendar-day,
+.dashboard-page.dashboard-dark .society-group-card h3,
+.dashboard-page.dashboard-dark .dashboard-meeting-row .meeting-main h3 {
+  color: #ededf0;
+}
+.dashboard-page.dashboard-dark .compact-create-btn,
+.dashboard-page.dashboard-dark .icon-action,
+.dashboard-page.dashboard-dark .mom-upload-button,
+.dashboard-page.dashboard-dark .society-group-card {
+  background: #24242a;
+  border-color: #41414a;
+  color: #a9c9f0;
+}
+.dashboard-page.dashboard-dark .society-group-tags span {
+  background: #303038;
+  color: #c5c5cc;
+}
+.dashboard-page.dashboard-dark .dashboard-meeting-row {
+  border-color: #3c3c44;
+}
+.dashboard-page.dashboard-dark .mini-calendar-grid .calendar-day {
+  color: #dedee3;
+}
+.dashboard-page.dashboard-dark .mini-calendar-grid .calendar-day.today {
+  background: #263b55;
+  color: #a9c9f0;
+}
+.dashboard-page.dashboard-dark .mini-calendar-month button {
+  color: #c5c5cc;
+}
+@media (max-width: 760px) {
+  .dashboard-page .dashboard-primary-grid,
+  .dashboard-page .society-groups-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Dashboard outer container */
+.dashboard-page {
+  width: 100%;
+  min-height: 100%;
+  box-sizing: border-box;
+  padding: 12px 24px 24px;
+  border: 1px solid #e8e0d6;
+  border-radius: 20px;
+  background: #ffffff;
+  color: #292929;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
+}
+
+.dashboard-page .dashboard-minimal {
+  padding-top: 0;
+}
+
+/* Dashboard dark mode */
+.dashboard-page.dashboard-dark {
+  background: #1b1b1f;
+  border-color: #37373d;
+  color: #ededf0;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+}
+
+.dashboard-page.dashboard-dark .panel,
+.dashboard-page.dashboard-dark .society-group-card {
+  background: #242429;
+  border-color: #3b3b43;
+  color: #ededf0;
+}
+
+.dashboard-page.dashboard-dark h1,
+.dashboard-page.dashboard-dark h2,
+.dashboard-page.dashboard-dark h3,
+.dashboard-page.dashboard-dark p {
+  color: #ededf0;
+}
+
+.dashboard-page.dashboard-dark .dashboard-empty,
+.dashboard-page.dashboard-dark .minimal-kicker {
+  color: #aaaab4;
+}
+
+
+
+/* =========================================================
+   DASHBOARD CARDS — MATCH THE ALL MEETS VISUAL STYLE
+   Keep the existing dashboard/page background unchanged.
+   ========================================================= */
+
+/* Light mode cards */
+.dashboard-page .panel,
+.dashboard-page .mini-calendar-panel,
+.dashboard-page .dashboard-scroll-panel,
+.dashboard-page .mom-panel,
+.dashboard-page .past-meetings-panel,
+.dashboard-page .announcement-panel,
+.dashboard-page .society-group-card {
+  background: #fdfbf8;
+  border: 1px solid #e9dfd4;
+  border-radius: 15px;
+  box-shadow: none;
+}
+
+.dashboard-page .panel-heading h2,
+.dashboard-page .society-group-card h3,
+.dashboard-page .dashboard-meeting-row .meeting-main h3,
+.dashboard-page .meeting-main h3 {
+  color: #292725;
+}
+
+.dashboard-page .dashboard-meeting-row,
+.dashboard-page .meeting-row {
+  border-color: #eee5dc;
+}
+
+.dashboard-page .compact-create-btn,
+.dashboard-page .icon-action,
+.dashboard-page .mom-upload-button,
+.dashboard-page .meeting-open {
+  background: #fffdfa;
+  border-color: #e9dfd4;
+  color: #71869d;
+}
+
+.dashboard-page .society-group-tags span {
+  background: #f1ece5;
+  color: #71675d;
+}
+
+/* Dark mode cards: charcoal surfaces like All Meets */
+.dashboard-page.dashboard-dark .panel,
+.dashboard-page.dashboard-dark .mini-calendar-panel,
+.dashboard-page.dashboard-dark .dashboard-scroll-panel,
+.dashboard-page.dashboard-dark .mom-panel,
+.dashboard-page.dashboard-dark .past-meetings-panel,
+.dashboard-page.dashboard-dark .announcement-panel,
+.dashboard-page.dashboard-dark .society-group-card {
+  background: #222226;
+  border-color: #34343a;
+  box-shadow: none;
+}
+
+.dashboard-page.dashboard-dark .panel-heading h2,
+.dashboard-page.dashboard-dark .society-group-card h3,
+.dashboard-page.dashboard-dark .dashboard-meeting-row .meeting-main h3,
+.dashboard-page.dashboard-dark .meeting-main h3 {
+  color: #f0f0f2;
+}
+
+.dashboard-page.dashboard-dark .dashboard-meeting-row,
+.dashboard-page.dashboard-dark .meeting-row {
+  border-color: #36363c;
+}
+
+.dashboard-page.dashboard-dark .dashboard-empty,
+.dashboard-page.dashboard-dark .past-meeting-count,
+.dashboard-page.dashboard-dark .meeting-meta,
+.dashboard-page.dashboard-dark .minimal-welcome p {
+  color: #a5a5ad;
+}
+
+.dashboard-page.dashboard-dark .compact-create-btn,
+.dashboard-page.dashboard-dark .icon-action,
+.dashboard-page.dashboard-dark .mom-upload-button,
+.dashboard-page.dashboard-dark .meeting-open {
+  background: #29292f;
+  border-color: #3b3b43;
+  color: #a9c9f0;
+}
+
+.dashboard-page.dashboard-dark .society-group-tags span {
+  background: #303037;
+  color: #c6c6ce;
+}
+
+.dashboard-page.dashboard-dark .mini-calendar-grid .weekday {
+  color: #a5a5ad;
+}
+
+.dashboard-page.dashboard-dark .mini-calendar-grid .calendar-day {
+  color: #dedee3;
+}
+
+.dashboard-page.dashboard-dark .mini-calendar-grid .calendar-day.today {
+  background: #293d55;
+  color: #a9c9f0;
+}
+
+.dashboard-page.dashboard-dark .mini-calendar-grid .calendar-day.has-meeting {
+  box-shadow: inset 0 -2px 0 #f05a5a;
+}
+
+.dashboard-page.dashboard-dark .meeting-date {
+  background: #422d31;
+  color: #ff8585;
+}
+
+.dashboard-page.dashboard-dark .team-pill.teal {
+  background: #203d3a;
+  color: #8cdbca;
+}
+
+.dashboard-page.dashboard-dark .team-pill.blue {
+  background: #263b54;
+  color: #a9cef5;
+}
+
+.dashboard-page.dashboard-dark .team-pill.purple {
+  background: #39304f;
+  color: #c7b5f3;
+}
+
+/* Clean dashboard welcome header */
+.dashboard-page .minimal-welcome {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 2px 12px;
+  margin: 0 0 18px;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.dashboard-page .minimal-welcome h1 {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  line-height: 1.2;
+  color: #292725;
+}
+
+.dashboard-page .minimal-welcome p {
+  margin: 7px 0 0;
+  padding: 0;
+  background: transparent;
+  color: #91877e;
+  font-size: 12px;
+}
+
+/* Dark mode */
+.dashboard-page.dashboard-dark .minimal-welcome h1 {
+  color: #f0f0f2;
+}
+
+.dashboard-page.dashboard-dark .minimal-welcome p {
+  color: #a5a5ad;
+}
+/* Welcome header — visible refinement */
+.dashboard-page .minimal-welcome {
+  padding: 8px 2px 18px !important;
+  margin-bottom: 18px !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.dashboard-page .minimal-welcome > div::before {
+  content: "WELCOME BACK";
+  display: block;
+  margin-bottom: 6px;
+  color: #e45b55;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.dashboard-page .minimal-welcome h1 {
+  font-size: 30px !important;
+  font-weight: 750 !important;
+  letter-spacing: -1.1px !important;
+  color: #292725;
+}
+
+.dashboard-page .minimal-welcome p {
+  display: inline-block;
+  margin-top: 8px !important;
+  padding: 5px 10px !important;
+  border-radius: 20px;
+  background: #f1ece5;
+  color: #71675d;
+  font-size: 10px;
+}
+
+/* Dark mode */
+.dashboard-page.dashboard-dark .minimal-welcome h1 {
+  color: #f0f0f2;
+}
+
+.dashboard-page.dashboard-dark .minimal-welcome p {
+  background: #303037;
+  color: #c6c6ce;
+}
+
+/* 1. Reduce welcome section whitespace */
+.dashboard-page .minimal-welcome {
+  padding: 0 2px 4px !important;
+  margin-bottom: 10px !important;
+}
+
+/* 2. Calendar narrower, meetings wider */
+.dashboard-page .dashboard-primary-grid {
+  grid-template-columns: minmax(0, 0.78fr) minmax(0, 1.22fr);
+  gap: 14px;
+  align-items: stretch;
+}
+
+/* 3. Reduce both panel heights */
+.dashboard-page .mini-calendar-panel,
+.dashboard-page .dashboard-scroll-panel {
+  padding: 15px 18px 12px;
+  min-height: 0;
+}
+
+/* Compact calendar */
+.dashboard-page .mini-calendar-month {
+  margin: 3px 0 7px;
+}
+
+.dashboard-page .mini-calendar-grid {
+  gap: 2px 5px;
+}
+
+.dashboard-page .mini-calendar-grid span {
+  min-height: 22px;
+  font-size: 10px;
+}
+
+/* Compact upcoming meetings */
+.dashboard-page .dashboard-scroll-content {
+  max-height: 205px;
+}
+
+/* Mobile layout */
+@media (max-width: 760px) {
+  .dashboard-page .dashboard-primary-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* Slightly lighter dashboard cards — light mode only */
+.dashboard-page:not(.dashboard-dark) .panel,
+.dashboard-page:not(.dashboard-dark) .society-group-card {
+  background: #fffdfa;
+  border-color: #e9dfd4;
+  box-shadow: none;
+}
+/* Match dashboard cards with TechSpace theme */
+
+/* Light mode */
+.dashboard-page:not(.dashboard-dark) .panel,
+.dashboard-page:not(.dashboard-dark) .society-group-card {
+  background-color: #fffdfa;
+  border-color: #e9dfd4;
+  box-shadow: none;
+}
+
+/* Dark mode */
+.dashboard-page.dashboard-dark .panel,
+.dashboard-page.dashboard-dark .society-group-card {
+  background-color: #222226;
+  border-color: #34343a;
+  box-shadow: none;
+}
+
+/* Compact Add MOM panel */
+.dashboard-page .mom-panel {
+  padding: 14px 18px 12px;
+}
+
+.dashboard-page .mom-panel .panel-heading {
+  margin-bottom: 6px;
+}
+
+.dashboard-page .mom-list {
+  max-height: 150px;
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+.dashboard-page .mom-panel .dashboard-meeting-row {
+  padding: 7px 0;
+}
+
+.dashboard-page .mom-panel .meeting-date {
+  width: 38px;
+  height: 40px;
+}
+
+/* Society Groups – Detailed Club Cards */
+
+.dashboard-page .society-group-card {
+  padding: 16px;
+}
+
+.dashboard-page .society-group-card h3 {
+  font-size: 14px;
+  margin-bottom: 13px;
+}
+
+.dashboard-page .society-group-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 9px;
+}
+
+.dashboard-page .society-club-card {
+  padding: 12px;
+  border: 1px solid #e9dfd4;
+  border-radius: 10px;
+  background: #fffdfa;
+}
+
+.dashboard-page .society-club-card h4 {
+  margin: 0 0 6px;
+  font-size: 12px;
+  color: #292725;
+}
+
+.dashboard-page .society-club-card p {
+  margin: 0;
+  font-size: 10px;
+  line-height: 1.5;
+  color: #91877e;
+}
+
+.dashboard-page.dashboard-dark .society-club-card {
+  background: #222226;
+  border-color: #34343a;
+}
+
+.dashboard-page.dashboard-dark .society-club-card h4 {
+  color: #f0f0f2;
+}
+
+.dashboard-page.dashboard-dark .society-club-card p {
+  color: #a5a5ad;
+}
+
+@media (max-width: 600px) {
+  .dashboard-page .society-group-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Society Groups — visual polish */
+
+.dashboard-page .society-groups {
+  margin-top: 20px;
+}
+
+.dashboard-page .society-groups .minimal-section-heading {
+  margin-bottom: 12px;
+}
+
+.dashboard-page .society-groups .minimal-section-heading h2 {
+  font-size: 17px;
+  font-weight: 700;
+  color: #292725;
+}
+
+.dashboard-page .society-groups-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.dashboard-page .society-group-card {
+  padding: 16px;
+  background: #fdfbf8;
+  border: 1px solid #e9dfd4;
+  border-radius: 13px;
+}
+
+.dashboard-page .society-group-card h3 {
+  font-size: 13px;
+  font-weight: 700;
+  margin: 0 0 12px;
+  color: #34465b;
+}
+
+.dashboard-page .society-group-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 9px;
+}
+
+.dashboard-page .society-club-card {
+  padding: 12px;
+  background: #fffefa;
+  border: 1px solid #eee5dc;
+  border-radius: 10px;
+  transition: border-color 180ms ease;
+}
+
+.dashboard-page .society-club-card:hover {
+  border-color: #d8c8b7;
+}
+
+.dashboard-page .society-club-card h4 {
+  font-size: 12px;
+  font-weight: 700;
+  color: #292725;
+  margin: 0 0 6px;
+}
+
+.dashboard-page .society-club-card p {
+  font-size: 10px;
+  line-height: 1.6;
+  color: #91877e;
+  margin: 0;
+}
+
+/* Dark mode */
+.dashboard-page.dashboard-dark .society-groups .minimal-section-heading h2 {
+  color: #f0f0f2;
+}
+
+.dashboard-page.dashboard-dark .society-group-card {
+  background: #222226;
+  border-color: #34343a;
+}
+
+.dashboard-page.dashboard-dark .society-group-card h3 {
+  color: #e6ebf2;
+}
+
+.dashboard-page.dashboard-dark .society-club-card {
+  background: #29292f;
+  border-color: #3b3b43;
+}
+
+.dashboard-page.dashboard-dark .society-club-card h4 {
+  color: #f0f0f2;
+}
+
+.dashboard-page.dashboard-dark .society-club-card p {
+  color: #a5a5ad;
+}
+
+@media (max-width: 650px) {
+  .dashboard-page .society-groups-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-page .society-group-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Restore heading contrast in dark mode */
+.dashboard-page.dashboard-dark h1,
+.dashboard-page.dashboard-dark h2,
+.dashboard-page.dashboard-dark h3,
+.dashboard-page.dashboard-dark h4,
+.dashboard-page.dashboard-dark .panel-heading h2,
+.dashboard-page.dashboard-dark .minimal-section-heading h2,
+.dashboard-page.dashboard-dark .minimal-welcome h1,
+.dashboard-page.dashboard-dark .society-group-card h3,
+.dashboard-page.dashboard-dark .society-club-card h4,
+.dashboard-page.dashboard-dark .meeting-main h3 {
+  color: #f5f5f5 !important;
+}
+
+/* Keep secondary text softer */
+.dashboard-page.dashboard-dark .minimal-kicker,
+.dashboard-page.dashboard-dark .minimal-welcome p,
+.dashboard-page.dashboard-dark .dashboard-empty,
+.dashboard-page.dashboard-dark .meeting-meta {
+  color: #a5a5ad;
+}
+/* Restore coral section labels in dark mode */
+.dashboard-page.dashboard-dark .minimal-kicker {
+  color: #ff5b5b !important;
+}
+/* Mini Calendar — meeting dots instead of underline */
+
+.dashboard-page .mini-calendar-grid .calendar-day.has-meeting {
+  position: relative;
+  box-shadow: none !important;
+}
+
+.dashboard-page .mini-calendar-grid .calendar-day.has-meeting::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #36a879;
+}
+
+/* Dark mode */
+.dashboard-page.dashboard-dark
+.mini-calendar-grid .calendar-day.has-meeting::after {
+  background: #42c995;
+}
+/* Mini Calendar typography polish */
+
+/* Month heading */
+.dashboard-page .mini-calendar-month {
+  color: #292725;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: -0.2px;
+}
+
+/* Weekday labels */
+.dashboard-page .mini-calendar-grid .weekday {
+  color: #91877e;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+/* Calendar dates */
+.dashboard-page .mini-calendar-grid .calendar-day {
+  color: #514d48;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+/* Selected date */
+.dashboard-page .mini-calendar-grid .calendar-day.today {
+  color: #28649d;
+  font-weight: 700;
+}
+
+/* Dark mode */
+.dashboard-page.dashboard-dark .mini-calendar-month {
+  color: #f0f0f2;
+}
+
+.dashboard-page.dashboard-dark .mini-calendar-grid .weekday {
+  color: #a5a5ad;
+}
+
+.dashboard-page.dashboard-dark .mini-calendar-grid .calendar-day {
+  color: #dedee3;
+}
+
+.dashboard-page.dashboard-dark .mini-calendar-grid .calendar-day.today {
+  color: #a9cef5;
+}
+
+/* Create Meeting Button */
+.dashboard-page .compact-create-btn {
+  background: #e45b55;
+  color: #ffffff;
+  border: 1px solid #e45b55;
+  border-radius: 9px;
+  padding: 9px 14px;
+  font-size: 11px;
+  font-weight: 700;
+  transition: all 180ms ease;
+}
+
+.dashboard-page .compact-create-btn:hover {
+  background: #d94c47;
+  border-color: #d94c47;
+  color: #ffffff;
+}
+
+/* Dark mode */
+.dashboard-page.dashboard-dark .compact-create-btn {
+  background: #e45b55;
+  color: #ffffff;
+  border-color: #e45b55;
+}
+
+.dashboard-page.dashboard-dark .compact-create-btn:hover {
+  background: #f06a64;
+  border-color: #f06a64;
+}
+
+.dashboard-page.dashboard-dark {
+  background-color: #19191c !important;
+  border: 1px solid #34343a !important;
+  border-radius: 18px !important;
+  box-shadow: none !important;
+}
+
+.dashboard-page .past-meetings-scroll {
+  height: 180px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* Faculty dashboard spacing */
+.dashboard-page .announcement-panel {
+  margin-bottom: 16px;
+}
+
+.dashboard-page .dashboard-primary-grid {
+  gap: 16px;
+}
+
+.dashboard-page .announcement-form {
+  margin-top: 16px;
+  padding: 16px;
+  border: 1px solid #eadfd5;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.dashboard-page .announcement-form input,
+.dashboard-page .announcement-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 11px 12px;
+  border: 1px solid #e5dcd2;
+  border-radius: 8px;
+  background: #fff;
+  color: #292725;
+  font: inherit;
+  font-size: 13px;
+}
+
+.dashboard-page .announcement-form textarea {
+  resize: vertical;
+}
+
+.dashboard-page .announcement-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.dashboard-page .announcement-form-actions button {
+  cursor: pointer;
+  padding: 9px 14px;
+  border-radius: 8px;
+  border: 1px solid #e5dcd2;
+  background: #fff;
+  font-size: 12px;
+}
+
+.dashboard-page .announcement-form-actions button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.dashboard-page .announcement-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.dashboard-page .announcement-card {
+  padding: 13px 15px;
+  border: 1px solid #eee3d9;
+  border-radius: 10px;
+}
+
+.dashboard-page .announcement-card h3 {
+  margin: 0 0 7px;
+  font-size: 14px;
+}
+
+.dashboard-page .announcement-card p {
+  margin: 0 0 9px;
+  font-size: 12px;
+  line-height: 1.6;
+  color: #898078;
+}
+
+.dashboard-page .announcement-card span {
+  font-size: 11px;
+  color: #9a9087;
+}
+
+/* TEAM LEAD DASHBOARD */
+.dashboard-page .team-details-panel {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.dashboard-page .team-details-panel > p {
+  margin: 8px 0 2px;
+  color: #817a73;
+  font-size: 12px;
+  line-height: 1.65;
+}
+
+.dashboard-page .team-tasks-panel {
+  margin-top: 16px;
+}
+
+.dashboard-page .team-task-form {
+  display: grid;
+  grid-template-columns: minmax(180px, 1fr) minmax(150px, 190px) auto;
+  gap: 10px;
+  margin: 14px 0 16px;
+}
+
+.dashboard-page .team-task-form input,
+.dashboard-page .team-task-card select {
+  min-width: 0;
+  box-sizing: border-box;
+  padding: 9px 11px;
+  border: 1px solid #e9dfd4;
+  border-radius: 8px;
+  background: #fffdfa;
+  color: #292725;
+  font: inherit;
+  font-size: 11px;
+}
+
+.dashboard-page .team-task-form input:focus,
+.dashboard-page .team-task-card select:focus {
+  outline: 2px solid #3977b533;
+  border-color: #8aa9c8;
+}
+
+.dashboard-page .team-task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.dashboard-page .team-task-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 12px 13px;
+  border: 1px solid #eee5dc;
+  border-radius: 10px;
+  background: #fffdfa;
+}
+
+.dashboard-page .team-task-details {
+  min-width: 0;
+}
+
+.dashboard-page .team-task-card h3 {
+  margin: 0 0 5px;
+  color: #292725;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.dashboard-page .team-task-card span {
+  color: #91877e;
+  font-size: 10px;
+}
+
+.dashboard-page .team-task-card select {
+  width: 125px;
+  flex: 0 0 125px;
+}
+
+.dashboard-page.dashboard-dark .team-details-panel,
+.dashboard-page.dashboard-dark .team-tasks-panel {
+  background: #222226;
+  border-color: #34343a;
+}
+
+.dashboard-page.dashboard-dark .team-details-panel > p,
+.dashboard-page.dashboard-dark .team-task-card span {
+  color: #a5a5ad;
+}
+
+.dashboard-page.dashboard-dark .team-task-card {
+  background: #29292f;
+  border-color: #3b3b43;
+}
+
+.dashboard-page.dashboard-dark .team-task-card h3 {
+  color: #f0f0f2;
+}
+
+.dashboard-page.dashboard-dark .team-task-form input,
+.dashboard-page.dashboard-dark .team-task-card select {
+  background: #29292f;
+  border-color: #41414a;
+  color: #ededf0;
+}
+
+@media (max-width: 700px) {
+  .dashboard-page .team-task-form {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-page .team-task-form .compact-create-btn {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-page .team-task-card {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .dashboard-page .team-task-card select {
+    width: 100%;
+    flex-basis: auto;
+  }
+}
+
+/* Team Lead - Compact Tasks with Scroll */
+
+.dashboard-page .team-tasks-panel {
+  margin-top: 16px;
+  padding-bottom: 12px;
+}
+
+.dashboard-page .team-task-form {
+  display: grid;
+  grid-template-columns: minmax(180px, 1fr) minmax(150px, 190px) auto;
+  gap: 10px;
+  margin: 10px 0 12px;
+}
+
+.dashboard-page .team-task-form input,
+.dashboard-page .team-task-card select {
+  min-width: 0;
+  box-sizing: border-box;
+  padding: 9px 11px;
+  border: 1px solid #e9dfd4;
+  border-radius: 8px;
+  background: #fffdfa;
+  color: #292725;
+  font: inherit;
+  font-size: 11px;
+}
+
+.dashboard-page .team-task-form input:focus,
+.dashboard-page .team-task-card select:focus {
+  outline: 2px solid #3977b533;
+  border-color: #8aa9c8;
+}
+
+/* Scrollable task list */
+.dashboard-page .team-task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 176px;
+  overflow-y: auto;
+  padding-right: 6px;
+  scrollbar-width: thin;
+  scrollbar-color: #d8c9bb transparent;
+}
+
+.dashboard-page .team-task-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.dashboard-page .team-task-list::-webkit-scrollbar-thumb {
+  background: #d8c9bb;
+  border-radius: 10px;
+}
+
+.dashboard-page .team-task-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Compact task cards */
+.dashboard-page .team-task-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  min-height: 54px;
+  box-sizing: border-box;
+  padding: 9px 12px;
+  border: 1px solid #eee5dc;
+  border-radius: 10px;
+  background: #fffdfa;
+}
+
+.dashboard-page .team-task-details {
+  min-width: 0;
+}
+
+.dashboard-page .team-task-card h3 {
+  margin: 0 0 5px;
+  color: #292725;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.dashboard-page .team-task-card span {
+  color: #91877e;
+  font-size: 10px;
+}
+
+.dashboard-page .team-task-card select {
+  width: 125px;
+  flex: 0 0 125px;
+}
+
+/* Dark mode */
+.dashboard-page.dashboard-dark .team-tasks-panel {
+  background: #222226;
+  border-color: #34343a;
+}
+
+.dashboard-page.dashboard-dark .team-task-card {
+  background: #29292f;
+  border-color: #3b3b43;
+}
+
+.dashboard-page.dashboard-dark .team-task-card h3 {
+  color: #f0f0f2;
+}
+
+.dashboard-page.dashboard-dark .team-task-card span {
+  color: #a5a5ad;
+}
+
+.dashboard-page.dashboard-dark .team-task-list {
+  scrollbar-color: #555560 transparent;
+}
+
+.dashboard-page.dashboard-dark .team-task-list::-webkit-scrollbar-thumb {
+  background: #555560;
+}
+
+.dashboard-page.dashboard-dark .team-task-form input,
+.dashboard-page.dashboard-dark .team-task-card select {
+  background: #29292f;
+  border-color: #41414a;
+  color: #ededf0;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .dashboard-page .team-task-form {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-page .team-task-form .compact-create-btn {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-page .team-task-card {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .dashboard-page .team-task-card select {
+    width: 100%;
+    flex-basis: auto;
+  }
+}
+
+/* Team Lead Overview */
+
+.dashboard-page .team-overview-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(230px, 1fr);
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.dashboard-page .team-overview-grid .team-details-panel {
+  margin: 0;
+  min-width: 0;
+}
+
+.dashboard-page .current-task-panel {
+  min-width: 0;
+  margin: 0;
+  padding: 17px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.dashboard-page .current-task-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 9px;
+}
+
+/* Same typography for both titles */
+.dashboard-page .team-details-panel .panel-heading h2,
+.dashboard-page .current-task-panel h2 {
+  font-size: 17px !important;
+  font-weight: 700 !important;
+  line-height: 1.3 !important;
+  margin: 0 !important;
+  transform: none !important;
+}
+
+.dashboard-page .current-task-status {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 20px;
+  padding: 4px 8px;
+  background: #eaf2fc;
+  color: #3977b5;
+  font-size: 9px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.dashboard-page .current-task-panel > p {
+  margin: 6px 0 0;
+  color: #91877e;
+  font-size: 10px;
+}
+
+/* Dark mode */
+.dashboard-page.dashboard-dark .current-task-panel h2 {
+  color: #f0f0f2;
+}
+
+.dashboard-page.dashboard-dark .current-task-panel > p {
+  color: #a5a5ad;
+}
+
+.dashboard-page.dashboard-dark .current-task-status {
+  background: #26394c;
+  color: #9cc8f4;
+}
+
+/* Responsive */
+@media (max-width: 650px) {
+  .dashboard-page .team-overview-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* Match Current Task typography with Development */
+.dashboard-page .current-task-panel h2 {
+  font-family: "Space Grotesk", sans-serif !important;
+  font-size: 15px !important;
+  font-weight: 700 !important;
+  line-height: 1.3 !important;
+  transform: none !important;
+}
+/* Fix extra space above Current Task title */
+.dashboard-page .current-task-heading .minimal-kicker {
+  margin-bottom: 0 !important;
+}
+
+.dashboard-page .current-task-heading {
+  margin-bottom: 3px !important;
+}
+
+.dashboard-page .current-task-panel {
+  justify-content: flex-start !important;
+}
+
+.dashboard-page .current-task-panel > p {
+  margin-top: 16px !important;
+}
+
+/* Executive Overview - Same styling as Team Lead */
+
+.dashboard-page .executive-overview-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(230px, 1fr);
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.dashboard-page .executive-overview-grid .team-details-panel {
+  margin: 0;
+  min-width: 0;
+}
+
+.dashboard-page .executive-overview-grid .current-task-panel {
+  min-width: 0;
+  margin: 0;
+  padding: 17px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.dashboard-page .executive-overview-grid .current-task-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 7px !important;
+}
+
+.dashboard-page .executive-overview-grid .current-task-heading .minimal-kicker {
+  margin-bottom: 0 !important;
+}
+
+/* Matching typography */
+.dashboard-page .executive-overview-grid .team-details-panel .panel-heading h2,
+.dashboard-page .executive-overview-grid .current-task-panel h2 {
+  font-family: "Space Grotesk", sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  line-height: 1.3 !important;
+  margin: 0 !important;
+  transform: none !important;
+}
+
+.dashboard-page .executive-overview-grid .current-task-panel > p {
+  margin: 16px 0 0;
+  color: #91877e;
+  font-size: 10px;
+}
+
+/* Dark mode */
+.dashboard-page.dashboard-dark .executive-overview-grid .current-task-panel h2 {
+  color: #f0f0f2;
+}
+
+.dashboard-page.dashboard-dark .executive-overview-grid .current-task-panel > p {
+  color: #a5a5ad;
+}
+
+/* Responsive */
+@media (max-width: 650px) {
+  .dashboard-page .executive-overview-grid {
+    grid-template-columns: 1fr;
+  }
+}
